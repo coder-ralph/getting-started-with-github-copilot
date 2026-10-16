@@ -59,19 +59,117 @@ section h3 {
 
 .activity-card {
   margin-bottom: 15px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  padding: 18px;
+  border: 1px solid #e0e4f0;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #fff 0%, #f7f8fc 100%);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.06);
 }
 
 .activity-card h4 {
   margin-bottom: 10px;
   color: #0066cc;
+  font-size: 1.15rem;
 }
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 16px;
+  padding-top: 13px;
+  border-top: 1px solid #e0e4f0;
+}
+
+.participants-section h5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: #303b70;
+  font-size: 0.95rem;
+}
+
+.participant-count {
+  display: inline-flex;
+  min-width: 22px;
+  height: 22px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 6px;
+  border-radius: 999px;
+  background-color: #e8eaf6;
+  color: #283593;
+  font-size: 0.8rem;
+}
+
+.participants-list {
+  display: grid;
+  gap: 7px;
+  list-style: none;
+}
+
+.participants-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 8px 7px 10px;
+  border-radius: 6px;
+  background-color: #fff;
+  color: #454b61;
+  overflow-wrap: anywhere;
+  font-size: 0.9rem;
+}
+
+.participants-list .participant-email {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.participants-list .remove-participant-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid #f0c8cc;
+  border-radius: 7px;
+  background-color: #fff7f7;
+  color: #b42332;
+}
+
+.participants-list .remove-participant-button:hover:not(:disabled) {
+  border-color: #d98b93;
+  background-color: #ffebed;
+}
+
+.participants-list .remove-participant-button:focus-visible {
+  outline: 3px solid rgba(180, 35, 50, 0.25);
+  outline-offset: 2px;
+}
+
+.participants-list .remove-participant-button:disabled {
+  cursor: wait;
+  opacity: 0.55;
+}
+
+.remove-participant-button svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.participants-list .no-participants {
+  color: #747b91;
+  font-style: italic;
 }
 
 .form-group {
